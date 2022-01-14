@@ -3,7 +3,7 @@ About dictlib
 
 Home: https://github.com/srevenant/dictlib
 
-Package license: GNU Affero General Public v3.0 or later
+Package license: AGPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dictlib-feedstock/blob/master/LICENSE.txt)
 
