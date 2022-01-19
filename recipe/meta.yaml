@@ -11,24 +11,27 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install .  -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - dictlib
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/srevenant/dictlib
-  license: GNU Affero General Public v3
-  license_family: AGPL
+  license: AGPL-3.0-or-later
   license_file: LICENSE.txt
   summary: Dictionary Library including good deep merge and dictionary as objects
   dev_url: https://github.com/srevenant/dictlib
@@ -37,5 +40,3 @@ extra:
   recipe-maintainers:
     - mxr-conda
     - Tata17
-    - oblute
-    - rluria14
